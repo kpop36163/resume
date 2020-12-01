@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/*個人經歷標題*/
+.experience{
+  font-size: 32px;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  color: rgb(77, 26, 7);
+  letter-spacing: 15px;
+  margin-left: 550px;
+  margin-top: 30px;
+  border-radius: 30px;
+  background:linear-gradient(to top,rgba(255, 204, 86, 0.815),rgb(226, 141, 3), rgb(253, 238, 101));
+  width: 200px;
+  height: 18px;
+  text-align: right;
+  box-shadow: 3px 2px 6px rgb(56, 55, 55);
+}
+/*時間軸*/
+.timeline{
+  margin: 100px 0  80px 0;
+}
+/*橫線*/
+.ol1 {
+	position: relative;
+	display: block;
+	margin: 60px;
+	height: 5px;
+  background: #24b287;
+  width: 650px;
+  box-shadow: 3px 3px 6px 1px #686766;
+}
+/*時間軸頭尾樣式*/
+.ol1::before,
+.ol1::after {
+	content: "";
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 0;
+	height: 0;
+  border-radius: 10px;
+  border: 10px solid #188a6e;
+}
+.ol1::before {
+	left: -5px;
+}
+/*箭頭樣式*/
+.ol1::after {
+	right: -10px;
+	border: 10px solid transparent;
+	border-right: 0;
+	border-left: 20px solid #1d9577;
+  border-radius: 3px;
+  height: 5px;
+}
+
+/*時間軸內文*/
+.li1 {
+	position: relative;
+  display: inline-block;
+	width: 150px;
+  height: 50px;
+  font: bold 12px 微軟正黑體;
+  text-align: center;
+}
+/*描述內的字型*/
+.li1:hover {
+  cursor: pointer;
+  color: #0f2f46;
+  background-color: #446dffcd;
+  transform: scale(1.2,1.2);
+}
+.li1:hover .description {
+  display: block;
+  font:bold 14px 微軟正黑體;
+}
+/*項目標籤*/
+.li1 .timeline1 {
+  position: absolute;
+  top: -55px;
+  left: 55px;
+  color: #073524;
+  font: 18px 微軟正黑體;
+  font-weight: bolder;
+}
+/*時間點*/
+.li1 .point {
+	content: "";
+	top: -4px;
+	left: 43%;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #085923;
+	border-radius: 10px;
+	background: rgb(163, 253, 193);
+  position: absolute;
+}
+/*項目描述*/
+.li1 .description {
+  display: none;
+  background-color: #babdfd93;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: normal;
+  z-index: 1;
+}
+
+/*大一到大四區塊*/
+.freshman,.sophomore,.senior{
+  width: 780px;
+  height: 480px;
+  margin: 0 0 30px 10px;
+}
+
+/*圖片放大+延伸區塊*/
+.senior1:hover,.senior2:hover,.senior3:hover{
+  transform:scale(1.2,1.2);
+}
+.freshman1:hover{
+  width: 500px;
+  transform:scale(1.2,1.2);
+  margin: 50px 0 0 20px;
+  position: relative;
+  left: -50px;
+}
+.freshman2:hover {
+  width: 400px;
+  transform: scale(1.2, 1.2);
+  margin: 50px 0 0 20px;
+  position: relative;
+  bottom: -10px;
+}
+/*圖片輪播特效*/
+.senior img,.freshman img,.sophomore img{ 
+  position:absolute;
+  transition:opacity 2s ease-in-out;
+  border-radius: 20px;
+  transition: all 1s ease-out;
+ }
+.senior1 img:last-child:hover{
+   opacity:0;
+}
+.senior2 img:last-child:hover{
+  opacity:0;
+}
+.junior2 img:last-child:hover{
+  opacity:0;
+}
+
+/*大一*/
+.freshman1{
+  width: 250px;
+  height: 200px;
+  background: rgba(146, 153, 253, 0.671);
+  transition: width 1s;
+  transition-timing-function: linear;
+  border-radius: 20px;
+  margin: 10px 0 10px 50px;
+  box-shadow:5px 6px 20px 6px #898787;
+}
+/*內文說明*/
+.p1{
+  text-align: right;
+  font : 15pt 微軟正黑體;
+  color: #010a0a;
+  font-weight: bolder;
+}
+.p2 {
+  text-align: right;
+  font : 12pt 微軟正黑體;
+  color: #4a4d4d;
+  font-weight: bolder;
+}
+.freshman2{
+  width: 250px;
+  height: 200px;
+  background: rgba(169, 243, 159, 0.678);
+  transition: width 1s;
+  transition-timing-function: linear;
+  border-radius: 20px;
+  margin: 10px 0 10px 50px;
+  box-shadow:5px 6px 20px 6px #898787;
+  float: right;
+  position: relative;
+  right: 50px;
+  bottom: -60px;
+}
+.img1{
+  position:relative;
+  right: 120px;
+  margin-top: 10px;
+}
+.img2 {
+  position: relative;
+  left:110px;
+  margin-top: 30px;
+}
+.img1:hover,.img2:hover {
+  transform: scale(1.2, 1.2);
+}
+/*大二*/
+.sophomore1{
+  width: 680px;
+  height: 230px;
+  position: relative;
+  top:-35px;
+  float: left;;
+}
+/*內文*/
+.p3{
+  text-align: right;
+  font : 18pt 微軟正黑體;
+  color: #010a0a;
+  font-weight: bolder;
+}
+.p4 {
+  text-align: right;
+  font : 15pt 微軟正黑體;
+  color: #4a4d4d;
+  font-weight: bolder;
+}
+.sophomore1 mark{
+  background-color: #2dca90;
+  border-radius: 20px;
+  color: #012222;
+}
+.sophomore img:hover{
+  transform:scale(1.1,1.1);
+}
+/*大三*/
+.junior1{
+  width: 500px;
+  height: 250px;
+  float: right;
+}
+.junior1 img{
+  position: relative;
+  right: -250px;
+  bottom: 280px;
+}
+/*內文*/
+.p5{
+  text-align: left;
+  font : 18pt 微軟正黑體;
+  color: #010a0a;
+  font-weight: bolder;
+}
+.p6 {
+  text-align: left;
+  font : 15pt 微軟正黑體;
+  color: #4a4d4d;
+  font-weight: bolder;
+}
+.junior1 mark{
+  background-color: #60cac5;
+  border-radius: 20px;
+  color: #012222;
+}
+.junior2{
+  float: right;
+  width: 220px;
+  height: 290px;
+  background-color:rgba(255, 255, 255, 0.548);
+  border-radius: 20px;
+  box-shadow:5px 6px 20px 6px #898787;
+  position: relative;
+  bottom: 10px;
+  right:50px;
+}
+/*大四*/
+.senior1{
+  width: 250px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+.senior2{
+  float:right;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  bottom: 70px;
+  right: -300px;
+}
+.senior3{
+  width: 500px;
+  height: 280px;
+  position: relative;
+  margin-bottom: 20px;
+  float: left;
+  bottom: 320px;
+}
+.senior3 mark{
+  border-radius: 20px;
+  background-color: rgb(215, 153, 241);
+}
+/*志工服務*/
+.text1{
+  float: right;
+  width: 300px;
+  height: 220px;
+  position: relative;
+  left: -210px;
+  top: -270px;
+}
+.pp {
+  text-align: left;
+  font : 15pt 微軟正黑體;
+  color: #4a4d4d;
+  font-weight: bolder;
+}
+.text1 mark{
+  border-radius: 20px;
+  background-color: rgb(241, 153, 165);
+}

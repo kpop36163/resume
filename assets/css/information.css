@@ -1,0 +1,59 @@
+/*大頭照*/
+.headshot{
+  border-radius: 30px;
+}
+.block1{
+  width:240px;
+  height: 220px;
+  border-radius: 30px;
+  float:left;
+  border: 2.5px solid;
+  border-color: rgb(246, 167, 136);
+  margin-left: 10px;
+}
+.block2{
+  width:auto;
+  height: 280px;
+  margin-left:300px;
+  border-left-style: solid; /*框線*/
+  border-width: 2px;
+  border-color: rgba(57, 59, 63, 0.664);
+  margin-top: 30px;
+}
+/*動圖*/
+.block2_img{
+width: 30%;
+height: 30%;
+float: right;
+position: relative;
+bottom: -40px;
+}
+
+/*基本資訊區塊*/
+.title1{
+  font-size: 32px;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  color: rgb(77, 26, 7);
+  letter-spacing: 15px;
+  margin-left: 180px;
+  margin-top: 10px;
+  border-radius: 30px;
+  background:linear-gradient(to top,rgb(255, 209, 4),rgb(231, 231, 150), rgba(255, 136, 0, 0.781));
+  width: 200px;
+  height: 18px;
+  text-align: right;
+  box-shadow: 3px 2px 6px rgb(56, 55, 55);
+}
+.title2{
+margin-top: 60px;
+margin-left: 10px;
+}
+.title3{
+  list-style: none;
+  font-family: 微軟正黑體;
+  color: rgb(46, 3, 18);
+  font-weight: bolder;
+  font-size: 20px;
+}
+

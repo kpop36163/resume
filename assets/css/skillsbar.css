@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/*專業職能標題*/
+.specialty{
+  font-size: 32px;
+  font-family: 微軟正黑體;
+  font-weight: bolder;
+  color: rgb(77, 26, 7);
+  letter-spacing: 15px;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius: 30px;
+  background:linear-gradient(to top,rgb(253, 191, 75),rgb(251, 186, 132), rgb(240, 161, 96));
+  width: 200px;
+  height: 18px;
+  text-align: right;
+  box-shadow: 3px 2px 6px rgb(56, 55, 55);
+}
+.specialty1{
+  width: 780px;
+  height: 360px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+
+/*skill bar*/
+/*skill 左區域*/
+.skills_1{
+  width: 320px;
+  height: 400px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+/*skill 右區域*/
+.skills_2{
+  width: 320px;
+  height: 380px;
+  float: right;
+}
+/*skill圖片位置*/
+.skill_img1{
+  width: 270px;
+  height: 160px;
+  margin: 20px 0 0 5px;
+  border-radius: 20px;
+  box-shadow: 3px 6px 10px 2px rgb(97, 88, 77);
+  transition: width 1s, height 1s, transform 1s;
+}
+.skill_img2{
+  width: 300px;
+  height: 180px;
+  margin: 20px 0 20px 0px;
+  border-radius: 20px;
+  box-shadow: 3px 6px 10px 2px rgb(97, 88, 77);
+  transition: width 1s, height 1s, transform 1s;
+}
+/*圖片放大特效*/
+.skill_img2:hover {
+  width: 370px;
+  height: 260px;
+  transform: rotate(360deg);
+}
+.skill_img1:hover {
+  width: 500px;
+  height: 360px;
+  transform: rotate(360deg);
+  position: relative;
+  top: -50px;
+}
+.skills_bg {
+  width: 300px;
+  height: 24px;
+  background-color: rgb(234, 255, 255);
+  border: solid;
+  border-radius: 8px;
+  border-color: rgb(224, 98, 52);
+  border-width: 2px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #000000;
+}
+.skills_premiere{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  border-color: #40a3ff;
+  background-color:#40a3ff;
+  animation: skills_premiere 3s ease;
+  animation-iteration-count: 2;
+  border-right-width:140px;
+}
+.skills_photoshop,.skills_office,.skills_html{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  animation: skills_photoshop 3s ease;
+  animation-iteration-count: 2;
+  border-right-width: 120px;
+  background-color: #56be8a;
+  border-color: #56be8a;
+}
+.skills_css{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  animation: skills_css 3s ease;
+  animation-iteration-count: 2;
+  border-right-width: 100px;
+  background-color:#ec8735;
+  border-color: #ec8735;
+}
+.skills_sql{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  animation: skills_sql 3s ease;
+  animation-iteration-count: 2;
+  border-right-width: 80px;
+  background-color: #a0cc3a;
+  border-color:#a0cc3a;
+}
+.skills_js,.skills_C{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  animation: skills_js 3s ease;
+  animation-iteration-count: 2;
+  border-right-width: 60px;
+  background-color: #ffa7fb; 
+  border-color:#ffa7fb; 
+}
+.skills_ill{
+  border-radius: 5px;
+  width: 150px;
+  height: 24px;
+  border-right-style: solid;
+  border-right-color:#ff8c77;
+  animation: skills_ill 4s ease;
+  animation-iteration-count: 2;
+  border-right-width: 40px;
+  background-color:#ff8c77;
+}
+/*skills bar動畫*/
+@keyframes skills_premiere{
+  from{border-right-width:0px ; }
+  to{border-right-width: 140px;}
+}
+@keyframes skills_photoshop{
+  from{border-right-width:0px ; }
+  to{border-right-width: 120px;}
+}
+@keyframes skills_css{
+  from{border-right-width:0px ; }
+  to{border-right-width: 100px;}
+}
+@keyframes skills_sql{
+  from{border-right-width:0px ; }
+  to{border-right-width: 80px;}
+}
+@keyframes skills_js{
+  from{border-right-width:0px ; }
+  to{border-right-width: 60px;}
+}
+@keyframes skills_ill{
+  from{border-right-width:0px ; }
+  to{border-right-width: 40px;}
+}
+/*點我*/
+.aa{
+  font: 20px 微軟正黑體;
+  font-weight: bolder;
+  position: relative;
+  left: 320px;
+  top:-30px;
+}
+.aa_img{
+  position: relative;
+  left: 180px;
+  top:10px;
+}

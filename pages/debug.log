@@ -1,0 +1,2 @@
+[1130/210017.764:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
+[1130/211034.651:ERROR:process_info.cc(359)] UncheckedAllocate
